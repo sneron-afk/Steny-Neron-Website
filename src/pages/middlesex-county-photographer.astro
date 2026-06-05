@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Steny Neron Photography",
+  "description": "Professional headshot and portrait photographer serving Middlesex County, NJ including Edison, Woodbridge, Piscataway, New Brunswick, and Metuchen.",
+  "url": "https://www.stenyneron.com/middlesex-county-photographer",
+  "telephone": "+17324231900",
+  "email": "info@stenyneron.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rahway",
+    "addressRegion": "NJ",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Middlesex County, NJ"
+  },
+  "sameAs": ["https://www.instagram.com/stenyneronphotography/"]
+};
+
+const cities = [
+  "Edison", "Woodbridge", "Piscataway", "New Brunswick", "Metuchen",
+  "Perth Amboy", "Old Bridge", "Sayreville", "East Brunswick", "South Brunswick",
+  "Highland Park", "Carteret", "South Amboy", "Milltown", "Bound Brook"
+];
+---
+
+<Layout
+  title="Middlesex County Photographer | Headshots & Portraits | Steny Neron Photography"
+  description="Professional headshot and portrait photographer serving Middlesex County, NJ. Studio sessions from $350. Serving Edison, Woodbridge, Piscataway, New Brunswick, Metuchen and all of Middlesex County."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+  <!-- Hero -->
+  <section class="bg-stone-800 py-24 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold mb-4">Serving Middlesex County, NJ</p>
+      <h1 class="font-serif text-5xl md:text-6xl font-semibold text-white leading-tight mb-6">
+        Middlesex County<br />Headshot Photographer
+      </h1>
+      <p class="text-stone-300 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+        Professional headshots and portraits for Middlesex County professionals and families. Serving Edison, Woodbridge, Piscataway, New Brunswick, Metuchen, and beyond from our Rahway, NJ studio.
+      </p>
+      <a href="/contact/" class="inline-block px-10 py-4 bg-white text-stone-800 text-sm font-semibold hover:bg-gold-light transition-colors">
+        Book Your Session
+      </a>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="max-w-4xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+    <div class="aspect-[3/4] overflow-hidden bg-stone-200">
+      <img src="/images/portfolio-12.jpg" alt="Middlesex County headshot photographer" class="w-full h-full object-cover" />
+    </div>
+    <div>
+      <p class="text-xs uppercase tracking-[0.25em] text-gold mb-4">Why Choose Steny Neron</p>
+      <h2 class="font-serif text-4xl font-semibold text-stone-800 mb-6 leading-tight">
+        Middlesex County's Trusted Portrait Studio
+      </h2>
+      <p class="text-stone-600 leading-relaxed mb-4">
+        Middlesex County is one of New Jersey's most diverse and fast-growing areas — home to corporate professionals in Edison, university communities in New Brunswick, and families throughout Woodbridge and beyond. Whatever your story, your photos should tell it well.
+      </p>
+      <p class="text-stone-600 leading-relaxed mb-8">
+        Our Rahway studio sits right on the border of Union and Middlesex counties, making us the most convenient professional photography studio in the area. Easy parking, relaxed atmosphere, outstanding results.
+      </p>
+      <a href="/services/" class="inline-flex items-center gap-2 text-sm font-semibold text-stone-800 border-b border-stone-800 pb-0.5 hover:text-gold hover:border-gold transition-colors">
+        View Pricing & Services
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-stone-100 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Sessions & Pricing</p>
+      <h2 class="font-serif text-4xl font-semibold text-stone-800 mb-12">What's Included</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-left">
+        {[
+          { title: "Studio Session Fee", price: "$350", desc: "Up to 4 hours, unlimited looks, choice of backgrounds." },
+          { title: "Digital Images", price: "$50/image", desc: "Professionally retouched, high-resolution digital files." },
+          { title: "Fine Art Prints", price: "$75/print", desc: "Premium 8×10 prints for your office or home." },
+        ].map(s => (
+          <div class="bg-white p-8 border border-stone-200">
+            <h3 class="font-serif text-xl font-semibold text-stone-800 mb-2">{s.title}</h3>
+            <p class="font-serif text-3xl font-bold text-stone-800 mb-3">{s.price}</p>
+            <p class="text-stone-500 text-sm">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+      <div class="mt-10">
+        <a href="/contact/" class="inline-block px-10 py-4 bg-stone-800 text-white text-sm font-semibold hover:bg-stone-700 transition-colors">
+          Book Your Middlesex County Session
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cities served -->
+  <section class="max-w-4xl mx-auto px-6 py-20">
+    <div class="text-center mb-10">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Service Area</p>
+      <h2 class="font-serif text-4xl font-semibold text-stone-800 mb-4">Serving All of Middlesex County</h2>
+      <p class="text-stone-500 max-w-lg mx-auto">Studio in Rahway, NJ — right on the Middlesex/Union county border for maximum convenience.</p>
+    </div>
+    <div class="flex flex-wrap gap-3 justify-center">
+      {cities.map(city => (
+        <span class="px-4 py-2 bg-stone-100 border border-stone-200 text-stone-600 text-sm">
+          {city}, NJ
+        </span>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-stone-800 py-20 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-serif text-4xl font-semibold text-white mb-4">Ready to Elevate Your Image?</h2>
+      <p class="text-stone-400 mb-8">Serving Middlesex County with professional studio headshots starting at $350.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact/" class="px-8 py-4 bg-white text-stone-800 text-sm font-semibold hover:bg-gold-light transition-colors">Book a Session</a>
+        <a href="tel:7324231900" class="px-8 py-4 border border-white text-white text-sm font-semibold hover:bg-white/10 transition-colors">Call 732.423.1900</a>
+      </div>
+    </div>
+  </section>
+</Layout>
