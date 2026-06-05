@@ -23,19 +23,19 @@ const structuredData = {
 
 const testimonials = [
   {
-    quote: "Steny made me feel completely at ease during my session. The headshots came out stunning — I've gotten so many compliments since updating my LinkedIn.",
-    name: "Marcus T.",
-    role: "Marketing Executive",
+    quote: "Steny took our engagement photos and did an outstanding job. He helped make us feel at ease in front of the camera, was responsive and easy to work with, and found the perfect combinations of poses and lighting. Steny does not settle for cookie cutter poses, and genuinely takes the time to get to know his subjects and understand their needs, which helps bring out emotion and connection in his shots. I would recommend Steny Neron Photography to anybody who is lucky enough to stumble across them!",
+    name: "Marc",
+    role: "Engagement Session",
   },
   {
-    quote: "I was nervous about getting photos taken, but Steny's energy made it fun. The final images were beyond what I expected. Absolutely worth every penny.",
-    name: "Diane R.",
-    role: "Entrepreneur",
+    quote: "Had a great shoot with Steny to update my headshots. He made me feel so comfortable in front of the camera and he got a lot of amazing shots. Great value for amazing photos!",
+    name: "Kerri-Ann",
+    role: "Headshot Session",
   },
   {
-    quote: "Professional, patient, and incredibly talented. My corporate headshots finally look like me — confident and polished. I'll be back for sure.",
-    name: "James K.",
-    role: "Attorney",
+    quote: "This was my 1st time getting headshots done for professional purposes. The headshots came out amazing and the whole process was fun and comfortable. Thank you so much.",
+    name: "Andrea",
+    role: "Professional Headshots",
   },
 ];
 ---
@@ -228,7 +228,25 @@ const testimonials = [
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
         <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Client Love</p>
-        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-white">What Clients Say</h2>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-white mb-4">What Clients Say</h2>
+        <div class="flex items-center justify-center gap-2">
+          <div class="flex gap-1">
+            {[1,2,3,4,5].map(() => (
+              <svg class="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            ))}
+          </div>
+          <span class="text-white font-semibold">5.0</span>
+          <a
+            href="https://share.google/C36GFCW9IQk9PF4w3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-stone-400 text-sm hover:text-white transition-colors underline underline-offset-2"
+          >
+            See all reviews on Google
+          </a>
+        </div>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
         {testimonials.map(t => (
