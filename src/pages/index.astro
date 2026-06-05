@@ -23,7 +23,12 @@ const structuredData = {
 
 const testimonials = [
   {
-    quote: "Steny took our engagement photos and did an outstanding job. He helped make us feel at ease in front of the camera, was responsive and easy to work with, and found the perfect combinations of poses and lighting. Steny does not settle for cookie cutter poses, and genuinely takes the time to get to know his subjects and understand their needs, which helps bring out emotion and connection in his shots. I would recommend Steny Neron Photography to anybody who is lucky enough to stumble across them!",
+    quote: "Working with Steny was an absolutely pleasure! He's super creative and took the time to make sure he understood exactly what I was looking for. Extremely thorough. The energy of the shoot was amazing down to the smallest details of the 'mood music'. To say he was professional and accommodating would be an understatement. Steny truly is a CLASS ACT and would receive my highest recommendation. You will be pleased, but don't take my word for it — see for yourself!",
+    name: "Aneesah",
+    role: "Headshot Session",
+  },
+  {
+    quote: "Steny took our engagement photos and did an outstanding job. He helped make us feel at ease in front of the camera, was responsive and easy to work with, and found the perfect combinations of poses and lighting. Steny does not settle for cookie cutter poses, and genuinely takes the time to get to know his subjects. I would recommend Steny Neron Photography to anybody who is lucky enough to stumble across them!",
     name: "Marc",
     role: "Engagement Session",
   },
@@ -31,6 +36,26 @@ const testimonials = [
     quote: "Had a great shoot with Steny to update my headshots. He made me feel so comfortable in front of the camera and he got a lot of amazing shots. Great value for amazing photos!",
     name: "Kerri-Ann",
     role: "Headshot Session",
+  },
+  {
+    quote: "This was my 1st time getting headshots done for professional purposes. The headshots came out amazing and the whole process was fun and comfortable. Thank you so much.",
+    name: "Charon",
+    role: "Professional Headshots",
+  },
+  {
+    quote: "Look no further. One of the best photographers I have worked with. I'm big on punctuality and professionalism — he was well worth the price. I also referred many of my coworkers.",
+    name: "Kelvin",
+    role: "Headshot Session",
+  },
+  {
+    quote: "What I enjoyed the most is that he already had an idea of where he wanted to shoot. Looking for location can be stressful. I look forward to working with him again!",
+    name: "Elise",
+    role: "Portrait Session",
+  },
+  {
+    quote: "One of the best in the business! Booking another shoot this Fall :-)",
+    name: "Aisha",
+    role: "Returning Client",
   },
   {
     quote: "This was my 1st time getting headshots done for professional purposes. The headshots came out amazing and the whole process was fun and comfortable. Thank you so much.",
@@ -249,7 +274,7 @@ const testimonials = [
         </div>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
-        {testimonials.map(t => (
+        {testimonials.slice(0, 3).map(t => (
           <div class="bg-stone-700/50 p-8 border border-stone-600">
             <svg class="h-8 w-8 text-gold mb-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
@@ -261,6 +286,19 @@ const testimonials = [
             </div>
           </div>
         ))}
+      </div>
+      <div class="text-center mt-10">
+        <a
+          href="https://share.google/C36GFCW9IQk9PF4w3"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-8 py-3 border border-stone-500 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-colors"
+        >
+          Read All 8 Reviews on Google
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
