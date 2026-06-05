@@ -92,6 +92,43 @@ const faqs = [
       </div>
     </div>
 
+    <!-- Maternity portraits -->
+    <div class="border border-stone-200 bg-white mt-8">
+      <div class="p-10">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+          <div class="flex-1">
+            <p class="text-xs uppercase tracking-[0.2em] text-gold mb-2">Studio Session</p>
+            <h2 class="font-serif text-3xl font-semibold text-stone-800 mb-4">Maternity Portraits</h2>
+            <p class="text-stone-500 leading-relaxed mb-6">
+              Celebrate the beauty of this chapter with a dedicated maternity session in our Rahway, NJ studio. Every detail is designed to make you feel comfortable, radiant, and truly seen.
+            </p>
+            <ul class="space-y-3">
+              {[
+                "Up to 4 hours of shooting time",
+                "Multiple looks & wardrobe changes",
+                "Variety of backgrounds & lighting setups",
+                "Guided posing tailored to your comfort",
+                "Partner & family welcome",
+                "Online proof gallery within 5–7 business days",
+              ].map(item => (
+                <li class="flex items-start gap-3 text-sm text-stone-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="md:text-right">
+            <p class="font-serif text-5xl font-bold text-stone-800">$350</p>
+            <p class="text-stone-400 text-sm mt-1">session fee</p>
+            <p class="text-stone-400 text-xs mt-2">+ $50/image · $75/print</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Example investment note -->
     <div class="mt-8 bg-gold-light/40 border border-gold/30 p-6">
       <p class="text-sm text-stone-700 leading-relaxed">
