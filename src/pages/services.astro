@@ -18,131 +18,197 @@ const faqs = [
     q: "Do I need to have experience in front of a camera?",
     a: "Not at all. Most clients have never had a professional session before. It's Steny's job to guide you — from posing to expression — so you feel natural and confident throughout."
   },
+  {
+    q: "How does pricing work?",
+    a: "Every session is quoted based on what you're looking for. Fill out the quote form below and Steny will get back to you within 1–2 business days with a tailored package."
+  },
 ];
 ---
 
 <Layout
-  title="Services & Pricing | Steny Neron Photography | Rahway, NJ"
-  description="Headshot and portrait session pricing in Rahway, NJ. Studio session fee $350. Retouched digital images $50 each. 8x10 prints $75."
+  title="Services | Steny Neron Photography | Rahway, NJ"
+  description="Professional headshot and portrait sessions in Rahway, NJ. Get a custom quote tailored to your needs."
 >
   <!-- Page header -->
   <section class="bg-stone-100 py-20 px-6 text-center">
     <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Invest in Yourself</p>
-    <h1 class="font-serif text-5xl md:text-6xl font-semibold text-stone-800 mb-4">Services & Pricing</h1>
+    <h1 class="font-serif text-5xl md:text-6xl font-semibold text-stone-800 mb-4">Services</h1>
     <p class="text-stone-500 max-w-xl mx-auto text-lg font-light">
-      Transparent pricing, no surprises. Every session is designed to help you look and feel your absolute best.
+      Every session is built around you. Tell us what you need and we'll put together the right package.
     </p>
   </section>
 
-  <!-- Main pricing -->
+  <!-- Services -->
   <section class="max-w-4xl mx-auto px-6 py-24">
     <div class="border border-stone-200 bg-white">
-      <!-- Session fee -->
+
+      <!-- Headshots & Portraits -->
       <div class="p-10 border-b border-stone-200">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-          <div class="flex-1">
-            <p class="text-xs uppercase tracking-[0.2em] text-gold mb-2">Studio Session</p>
-            <h2 class="font-serif text-3xl font-semibold text-stone-800 mb-4">Headshots & Portraits</h2>
-            <p class="text-stone-500 leading-relaxed mb-6">
-              A dedicated, unhurried studio session at our Rahway, NJ location. You'll have full access to our equipment, lighting setups, and background options.
-            </p>
-            <ul class="space-y-3">
-              {[
-                "Up to 4 hours of shooting time",
-                "Unlimited looks & outfit changes",
-                "Choice of backgrounds",
-                "Professional lighting & studio setup",
-                "Guided posing & direction throughout",
-                "Online proof gallery within 5–7 business days",
-              ].map(item => (
-                <li class="flex items-start gap-3 text-sm text-stone-600">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div class="md:text-right">
-            <p class="font-serif text-5xl font-bold text-stone-800">$350</p>
-            <p class="text-stone-400 text-sm mt-1">session fee</p>
-          </div>
+        <div class="flex-1">
+          <p class="text-xs uppercase tracking-[0.2em] text-gold mb-2">Studio Session</p>
+          <h2 class="font-serif text-3xl font-semibold text-stone-800 mb-4">Headshots & Portraits</h2>
+          <p class="text-stone-500 leading-relaxed mb-6">
+            A dedicated, unhurried studio session at our Rahway, NJ location. You'll have full access to our equipment, lighting setups, and background options — everything tailored to you.
+          </p>
+          <ul class="space-y-3">
+            {[
+              "Up to 4 hours of shooting time",
+              "Unlimited looks & outfit changes",
+              "Choice of backgrounds",
+              "Professional lighting & studio setup",
+              "Guided posing & direction throughout",
+              "Online proof gallery within 5–7 business days",
+              "Retouched digital files & fine art print options",
+            ].map(item => (
+              <li class="flex items-start gap-3 text-sm text-stone-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
-      <!-- Add-ons -->
-      <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-stone-200">
-        <div class="p-10">
-          <p class="text-xs uppercase tracking-[0.2em] text-gold mb-2">Add-On</p>
-          <h3 class="font-serif text-2xl font-semibold text-stone-800 mb-2">Digital Images</h3>
-          <p class="font-serif text-4xl font-bold text-stone-800 mb-4">$50 <span class="text-base font-sans font-normal text-stone-500">/ image</span></p>
-          <p class="text-stone-500 text-sm leading-relaxed">
-            Professionally retouched, high-resolution digital files. Perfect for LinkedIn, websites, press kits, and social media. Delivered via online gallery download.
-          </p>
-        </div>
-        <div class="p-10">
-          <p class="text-xs uppercase tracking-[0.2em] text-gold mb-2">Add-On</p>
-          <h3 class="font-serif text-2xl font-semibold text-stone-800 mb-2">Fine Art Prints</h3>
-          <p class="font-serif text-4xl font-bold text-stone-800 mb-4">$75 <span class="text-base font-sans font-normal text-stone-500">/ print (8×10)</span></p>
-          <p class="text-stone-500 text-sm leading-relaxed">
-            Premium quality 8×10 fine art prints. Ideal for your office, home wall, or as a personal keepsake. Printed on professional archival paper.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Maternity portraits -->
-    <div class="border border-stone-200 bg-white mt-8">
+      <!-- Maternity -->
       <div class="p-10">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-          <div class="flex-1">
-            <p class="text-xs uppercase tracking-[0.2em] text-gold mb-2">Studio Session</p>
-            <h2 class="font-serif text-3xl font-semibold text-stone-800 mb-4">Maternity Portraits</h2>
-            <p class="text-stone-500 leading-relaxed mb-6">
-              Celebrate the beauty of this chapter with a dedicated maternity session in our Rahway, NJ studio. Every detail is designed to make you feel comfortable, radiant, and truly seen.
-            </p>
-            <ul class="space-y-3">
-              {[
-                "Up to 4 hours of shooting time",
-                "Multiple looks & wardrobe changes",
-                "Variety of backgrounds & lighting setups",
-                "Guided posing tailored to your comfort",
-                "Partner & family welcome",
-                "Online proof gallery within 5–7 business days",
-              ].map(item => (
-                <li class="flex items-start gap-3 text-sm text-stone-600">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div class="md:text-right">
-            <p class="font-serif text-5xl font-bold text-stone-800">$350</p>
-            <p class="text-stone-400 text-sm mt-1">session fee</p>
-            <p class="text-stone-400 text-xs mt-2">+ $50/image · $75/print</p>
-          </div>
+        <div class="flex-1">
+          <p class="text-xs uppercase tracking-[0.2em] text-gold mb-2">Studio Session</p>
+          <h2 class="font-serif text-3xl font-semibold text-stone-800 mb-4">Maternity Portraits</h2>
+          <p class="text-stone-500 leading-relaxed mb-6">
+            Celebrate the beauty of this chapter with a dedicated maternity session in our Rahway, NJ studio. Every detail is designed to make you feel comfortable, radiant, and truly seen.
+          </p>
+          <ul class="space-y-3">
+            {[
+              "Up to 4 hours of shooting time",
+              "Multiple looks & wardrobe changes",
+              "Variety of backgrounds & lighting setups",
+              "Guided posing tailored to your comfort",
+              "Partner & family welcome",
+              "Online proof gallery within 5–7 business days",
+            ].map(item => (
+              <li class="flex items-start gap-3 text-sm text-stone-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
+
     </div>
 
-    <!-- Example investment note -->
-    <div class="mt-8 bg-gold-light/40 border border-gold/30 p-6">
-      <p class="text-sm text-stone-700 leading-relaxed">
-        <span class="font-semibold">Example investment:</span> A studio session + 3 retouched digital images + 1 print comes to <strong>$575</strong>. Not sure how many images you'll want? Most clients select 3–5 after viewing their proof gallery.
-      </p>
-    </div>
+    <!-- Quote form -->
+    <div class="mt-16">
+      <div class="text-center mb-10">
+        <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Let's Talk</p>
+        <h2 class="font-serif text-4xl font-semibold text-stone-800 mb-3">Get a Custom Quote</h2>
+        <p class="text-stone-500 max-w-lg mx-auto text-sm leading-relaxed">
+          Tell us a little about what you're looking for and we'll get back to you within 1–2 business days with a tailored quote.
+        </p>
+      </div>
 
-    <div class="text-center mt-12">
-      <a href="/contact/" class="inline-block px-10 py-4 bg-stone-800 text-white text-sm font-semibold hover:bg-stone-700 transition-colors">
-        Book Your Session
-      </a>
-      <p class="mt-6 text-sm text-stone-500">
-        Looking for something different? <a href="/contact/" class="text-stone-700 font-medium underline underline-offset-2 hover:text-gold transition-colors">Contact us</a> to discuss a session tailored to your needs.
-      </p>
+      <form
+        name="quote"
+        method="POST"
+        action="/success/"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="space-y-6 max-w-2xl mx-auto"
+      >
+        <input type="hidden" name="form-name" value="quote" />
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-xs uppercase tracking-[0.15em] text-stone-500 mb-2">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full border border-stone-300 px-4 py-3 text-sm text-stone-800 bg-white focus:outline-none focus:border-stone-600 transition-colors placeholder:text-stone-400"
+              placeholder="Your name"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-xs uppercase tracking-[0.15em] text-stone-500 mb-2">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full border border-stone-300 px-4 py-3 text-sm text-stone-800 bg-white focus:outline-none focus:border-stone-600 transition-colors placeholder:text-stone-400"
+              placeholder="your@email.com"
+            />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="phone" class="block text-xs uppercase tracking-[0.15em] text-stone-500 mb-2">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="w-full border border-stone-300 px-4 py-3 text-sm text-stone-800 bg-white focus:outline-none focus:border-stone-600 transition-colors placeholder:text-stone-400"
+              placeholder="(xxx) xxx-xxxx"
+            />
+          </div>
+          <div>
+            <label for="session_type" class="block text-xs uppercase tracking-[0.15em] text-stone-500 mb-2">Session Type</label>
+            <select
+              id="session_type"
+              name="session_type"
+              class="w-full border border-stone-300 px-4 py-3 text-sm text-stone-800 bg-white focus:outline-none focus:border-stone-600 transition-colors"
+            >
+              <option value="">Select a session type</option>
+              <option value="headshots">Professional Headshots</option>
+              <option value="portraits">Personal Portraits</option>
+              <option value="maternity">Maternity Portraits</option>
+              <option value="both">Headshots & Portraits</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="needs" class="block text-xs uppercase tracking-[0.15em] text-stone-500 mb-2">Tell Us About Your Needs *</label>
+          <textarea
+            id="needs"
+            name="needs"
+            rows="5"
+            required
+            class="w-full border border-stone-300 px-4 py-3 text-sm text-stone-800 bg-white focus:outline-none focus:border-stone-600 transition-colors placeholder:text-stone-400 resize-none"
+            placeholder="What are you looking for? What's the occasion? Any specific looks, backgrounds, or deliverables in mind? The more detail, the better."
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="date" class="block text-xs uppercase tracking-[0.15em] text-stone-500 mb-2">Preferred Date (optional)</label>
+          <input
+            type="date"
+            id="date"
+            name="preferred_date"
+            class="w-full border border-stone-300 px-4 py-3 text-sm text-stone-800 bg-white focus:outline-none focus:border-stone-600 transition-colors"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full py-4 bg-stone-800 text-white text-sm font-semibold tracking-wide hover:bg-stone-700 transition-colors"
+        >
+          Request My Custom Quote
+        </button>
+
+        <p class="text-xs text-stone-400 text-center">
+          We respond within 1–2 business days. Prefer to call? Reach us at
+          <a href="tel:7324231900" class="underline hover:text-stone-600">732.423.1900</a>.
+        </p>
+      </form>
     </div>
   </section>
 
