@@ -1,0 +1,163 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Steny Neron Photography",
+  "description": "Corporate headshot days for companies and organizations in New Jersey. Studio or on-site headshots for your entire team.",
+  "url": "https://www.stenyneron.com/corporate-headshots",
+  "telephone": "+17326467002",
+  "email": "info@stenyneron.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rahway",
+    "addressRegion": "NJ",
+    "addressCountry": "US"
+  },
+  "sameAs": ["https://www.instagram.com/stenyneronphotography/"]
+};
+---
+
+<Layout
+  title="Corporate Headshot Days | Team Headshots NJ | Steny Neron Photography"
+  description="Professional corporate headshot days for companies in New Jersey. We come to your office or your team comes to our Rahway studio. Consistent, polished headshots for every employee."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+  <!-- Hero -->
+  <section class="bg-stone-800 py-24 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold mb-4">For Teams & Organizations</p>
+      <h1 class="font-serif text-5xl md:text-6xl font-semibold text-white leading-tight mb-6">
+        Corporate<br />Headshot Days
+      </h1>
+      <p class="text-stone-300 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+        Professional headshots for your entire team — in one efficient, well-organized session. We come to you, or you come to us.
+      </p>
+      <a href="/contact/" class="inline-block px-10 py-4 bg-white text-stone-800 text-sm font-semibold hover:bg-gold-light transition-colors">
+        Get a Team Quote
+      </a>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="max-w-4xl mx-auto px-6 py-24">
+    <div class="text-center mb-16">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Two Options</p>
+      <h2 class="font-serif text-4xl font-semibold text-stone-800 mb-4">Studio or On-Site — Your Call</h2>
+      <p class="text-stone-500 max-w-lg mx-auto">We make it easy regardless of your team size or location.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-stone-100 p-10 border border-stone-200">
+        <div class="w-10 h-10 mb-6 flex items-center justify-center bg-stone-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+        <h3 class="font-serif text-2xl font-semibold text-stone-800 mb-3">At Our Studio</h3>
+        <p class="text-stone-600 leading-relaxed mb-4">Send your team to our Rahway, NJ studio. We schedule back-to-back appointments in 15–20 minute slots, keeping things moving without feeling rushed. Full lighting setup, multiple backgrounds, and a relaxed environment.</p>
+        <ul class="space-y-2 text-sm text-stone-600">
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Optimal lighting and equipment
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Choice of backgrounds
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Easy parking, no setup complexity
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Ideal for teams of all sizes
+          </li>
+        </ul>
+      </div>
+      <div class="bg-stone-100 p-10 border border-stone-200">
+        <div class="w-10 h-10 mb-6 flex items-center justify-center bg-stone-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-serif text-2xl font-semibold text-stone-800 mb-3">At Your Office</h3>
+        <p class="text-stone-600 leading-relaxed mb-4">We bring the studio to you. Our portable setup produces the same professional-quality results in your conference room, lobby, or any open space. Minimal disruption to your workday — maximum results for your team.</p>
+        <ul class="space-y-2 text-sm text-stone-600">
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            No travel time for your team
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Professional portable lighting rig
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Serving all of Northern & Central NJ
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Great for larger teams
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's included -->
+  <section class="bg-stone-100 py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Every Corporate Day Includes</p>
+        <h2 class="font-serif text-4xl font-semibold text-stone-800">What Your Team Gets</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        {[
+          { title: "Individual Sessions", desc: "Each team member gets their own dedicated time slot with personal direction and posing guidance." },
+          { title: "Consistent Look", desc: "Coordinated lighting and backgrounds so every headshot reads as part of the same professional family." },
+          { title: "Retouched Deliverables", desc: "Professionally retouched, high-resolution digital files delivered via individual online galleries." },
+        ].map(item => (
+          <div class="bg-white p-8 border border-stone-200">
+            <h3 class="font-serif text-xl font-semibold text-stone-800 mb-3">{item.title}</h3>
+            <p class="text-stone-500 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="max-w-4xl mx-auto px-6 py-24">
+    <div class="text-center mb-12">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold mb-3">Industries We Serve</p>
+      <h2 class="font-serif text-4xl font-semibold text-stone-800 mb-4">Who Books Corporate Days</h2>
+      <p class="text-stone-500 max-w-lg mx-auto">Any organization that wants its people to make a strong first impression.</p>
+    </div>
+    <div class="flex flex-wrap gap-3 justify-center">
+      {[
+        "Law Firms", "Financial Services", "Real Estate Agencies", "Healthcare Practices",
+        "Consulting Firms", "Tech Startups", "PR & Marketing Agencies", "Nonprofit Organizations",
+        "University Departments", "Insurance Companies", "Architecture Firms", "Accounting Firms"
+      ].map(industry => (
+        <span class="px-4 py-2 bg-stone-100 border border-stone-200 text-stone-600 text-sm">
+          {industry}
+        </span>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-stone-800 py-20 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-serif text-4xl font-semibold text-white mb-4">Ready to Book Your Team?</h2>
+      <p class="text-stone-400 mb-8">Tell us about your team size, preferred date, and whether you'd like studio or on-site service. We'll put together a custom quote.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact/" class="px-8 py-4 bg-white text-stone-800 text-sm font-semibold hover:bg-gold-light transition-colors">Get a Team Quote</a>
+        <a href="tel:7326467002" class="px-8 py-4 border border-white text-white text-sm font-semibold hover:bg-white/10 transition-colors">Call 732.646.7002</a>
+      </div>
+    </div>
+  </section>
+</Layout>
